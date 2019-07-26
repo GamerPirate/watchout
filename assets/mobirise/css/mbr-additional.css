@@ -132,7 +132,7 @@ body {
   border-radius: 3px;
 }
 .bg-primary {
-  background-color: #149dcc !important;
+  background-color: #ffffff !important;
 }
 .bg-success {
   background-color: #f7ed4a !important;
@@ -148,23 +148,23 @@ body {
 }
 .btn-primary,
 .btn-primary:active {
-  background-color: #149dcc !important;
-  border-color: #149dcc !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #808080 !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary.active {
-  color: #ffffff !important;
-  background-color: #0d6786 !important;
-  border-color: #0d6786 !important;
+  color: #808080 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d9d9d9 !important;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #ffffff !important;
-  background-color: #0d6786 !important;
-  border-color: #0d6786 !important;
+  color: #808080 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d9d9d9 !important;
 }
 .btn-secondary,
 .btn-secondary:active {
@@ -312,22 +312,22 @@ body {
 .btn-primary-outline,
 .btn-primary-outline:active {
   background: none;
-  border-color: #0b566f;
-  color: #0b566f;
+  border-color: #cccccc;
+  color: #cccccc;
 }
 .btn-primary-outline:hover,
 .btn-primary-outline:focus,
 .btn-primary-outline.focus,
 .btn-primary-outline.active {
-  color: #ffffff;
-  background-color: #149dcc;
-  border-color: #149dcc;
+  color: #808080;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-primary-outline.disabled,
 .btn-primary-outline:disabled {
-  color: #ffffff !important;
-  background-color: #149dcc !important;
-  border-color: #149dcc !important;
+  color: #808080 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
 }
 .btn-secondary-outline,
 .btn-secondary-outline:active {
@@ -464,7 +464,7 @@ body {
   border-color: #ffffff;
 }
 .text-primary {
-  color: #149dcc !important;
+  color: #ffffff !important;
 }
 .text-secondary {
   color: #ff3366 !important;
@@ -489,7 +489,7 @@ body {
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #0b566f !important;
+  color: #cccccc !important;
 }
 a.text-secondary:hover,
 a.text-secondary:focus {
@@ -547,9 +547,9 @@ a.text-black:focus {
   border-radius: 100px !important;
 }
 .mbr-gallery-filter li.active .btn {
-  background-color: #149dcc;
-  border-color: #149dcc;
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #8c8c8c;
 }
 .mbr-gallery-filter li.active .btn:focus {
   box-shadow: none;
@@ -565,11 +565,11 @@ a.text-black:focus {
 }
 a,
 a:hover {
-  color: #149dcc;
+  color: #ffffff;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
-  color: #b4e6f8;
+  color: #ffffff;
 }
 .mbr-plan-header.bg-success .mbr-plan-subtitle,
 .mbr-plan-header.bg-success .mbr-plan-price-desc {
@@ -683,13 +683,14 @@ a:hover {
   right: 0;
   top: 0;
   z-index: 0;
+  pointer-events: none;
 }
 blockquote {
   font-style: italic;
   padding: 10px 0 10px 20px;
   font-size: 1.09rem;
   position: relative;
-  border-color: #149dcc;
+  border-color: #ffffff;
   border-width: 3px;
 }
 ul,
@@ -778,7 +779,7 @@ pre {
   text-align: center;
   position: relative;
   border: 2px solid #c0a375;
-  border-color: #149dcc;
+  border-color: #ffffff;
   color: #232323;
   cursor: pointer;
 }
@@ -789,7 +790,7 @@ pre {
 }
 .btn-social:hover {
   color: #fff;
-  background: #149dcc;
+  background: #ffffff;
 }
 .btn-social + .btn {
   margin-left: .1rem;
@@ -797,11 +798,11 @@ pre {
 /* Footer */
 .mbr-footer-content li::before,
 .mbr-footer .mbr-contacts li::before {
-  background: #149dcc;
+  background: #ffffff;
 }
 .mbr-footer-content li a:hover,
 .mbr-footer .mbr-contacts li a:hover {
-  color: #149dcc;
+  color: #ffffff;
 }
 .footer3 input[type="email"],
 .footer4 input[type="email"] {
@@ -1380,6 +1381,37 @@ body {
   .card-wrapper {
     flex: auto!important;
   }
+}
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #ffffff;
+  color: #000000;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
 }
 .cid-reySlFKnbC .navbar {
   padding: .5rem 0;
@@ -2972,7 +3004,7 @@ body {
 .cid-rezd6ymjCF {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/hatchback-1920x1080.jpg");
+  background-image: url("../../../assets/images/hatchback-1-1920x1080.jpg");
 }
 .cid-rezd6ymjCF H1 {
   color: #ffffff;
@@ -4081,7 +4113,7 @@ body {
 .cid-reKl7l4vWS {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/watch-out-cover-remastered-1582018nologos-1920x1080.jpg");
+  background-image: url("../../../assets/images/hatchback-1920x1080.png");
 }
 .cid-reKleBuROm {
   padding-top: 0px;
@@ -4707,7 +4739,7 @@ body {
 .cid-reKp9NYk2B {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/watch-out-pc-edition-cover-nologos-2982018-1920x1080.jpg");
+  background-image: url("../../../assets/images/supercar-0-1920x1080.jpg");
 }
 .cid-reKp9VJ34s {
   padding-top: 30px;
@@ -5352,7 +5384,7 @@ body {
 .cid-reKwqmvPlz {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/diamond-1920x1080.jpg");
+  background-image: url("../../../assets/images/supercar-0-1920x1080.jpg");
 }
 .cid-reKwqnXYxg {
   padding-top: 30px;
@@ -5933,7 +5965,7 @@ body {
 .cid-reKzrQsohW {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/watch-out-cover-remastered-1582018nologos-1920x1080.jpg");
+  background-image: url("../../../assets/images/hatchback-0-1920x1080.jpg");
 }
 .cid-reKBitf0QH {
   padding-top: 60px;
@@ -6439,7 +6471,7 @@ body {
 .cid-reKnvzrC9q {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/watch-out-pc-edition-cover-nologos-2982018-1920x1080.jpg");
+  background-image: url("../../../assets/images/musclecar-1-1920x1080.jpg");
 }
 .cid-reKnvAMOOx {
   padding-top: 0px;
